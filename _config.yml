@@ -1,0 +1,24 @@
+# Build settings
+
+name: DOCType
+
+markdown: kramdown
+permalink: pretty
+
+url: http://localhost:4000
+
+port: 4000
+
+sass:
+  sass_dir: assets/css
+  style: :compressed # :nested, :expanded, :compact, :compressed
+
+exclude: [
+  'node_modules',
+  'sass_cache',
+  'Gruntfile.js',
+  'package.json',
+  '*.map']
+
+collections:
+- sections

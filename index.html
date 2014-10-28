@@ -1,0 +1,38 @@
+---
+---
+
+{% include head.html %}
+
+<div class="page-wrap">
+
+{% include sidebar.html %}
+	
+	<div class="main-content">
+		<header class="main-header">
+			<h1>Instructions</h1>
+		</header>
+		<div class="wrapper">
+			{% for post in site.sections %}
+
+				<article id="{{ post.title | truncatewords: 1, '' | downcase }}" class="section">
+
+					<div class="inner">
+						<header class="heading">
+							<h1>
+								{{ post.title }}
+							</h1>
+						</header>
+
+						<section class="post">
+							{{ post.content }}
+						</section>
+					</div>
+				</article>
+
+			{% endfor %}
+		</div>
+	</div>
+
+</div>
+
+{% include footer.html %}

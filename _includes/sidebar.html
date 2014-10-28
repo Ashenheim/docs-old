@@ -1,0 +1,26 @@
+
+<section class="sidebar">
+	
+	<nav>
+		<div class="menu-button">
+			{% include hamburger.svg %}
+		</div>
+
+		<ul role="navigation">
+			
+			{% for post in site.sections %}
+				<li>
+					<a href="#{{ post.title | truncatewords: 1, '' | downcase }}">{{ post.title }}</a>
+				</li>
+			{% endfor %}
+
+		</ul>
+	</nav>
+
+	<div class="logo">
+		<a href="http://carann.nu">
+			{% include carann_logotype.svg %}
+		</a>
+	</div>
+
+</section>
