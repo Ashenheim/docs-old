@@ -8,7 +8,7 @@ module.exports = function(grunt) {
 				files: [ 'index.html',
 							'_includes/*',
 							'_sections/*',
-							'_config.yml',
+							'_config-dev.yml',
 							'images/**/*' ],
 				tasks: [ 'shell:jekyllBuild' ]
 			},
@@ -28,10 +28,10 @@ module.exports = function(grunt) {
 
 		shell: {
 			jekyllBuild: {
-				command: 'jekyll build'
+				command: "jekyll build --config _config-dev.yml"
 			},
 			jekyllServe: {
-				command: 'jekyll serve'
+				command: "jekyll serve"
 			}
 		},
 
