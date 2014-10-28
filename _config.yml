@@ -5,7 +5,7 @@ name: DOCType
 markdown: kramdown
 permalink: pretty
 
-url: docs/
+url: docs
 
 port: 4000
 
